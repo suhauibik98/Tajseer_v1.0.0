@@ -1,0 +1,56 @@
+{
+   "logo":{
+    "logo":"logoEn"   },
+
+  "nav.Home": "Home",
+  "nav.About": "About",
+  "nav.Service": "Service",
+  "nav.Training": "Training & Consulting",
+
+  "about.title": "About us",
+  "about.description": "Tajseer is a company specialized in the development of Elearning courses, distance learning and training, virtual reality, STEM methodology, and training/educational consultancy based on the needs of real and virtual e-learning solutions. Since its inception in the Kingdom of Saudi Arabia in (2009), the company keep planning, implementing, developing and programming Elearning and distance learning projects, by following the best practices and the latest educational technologies within the highest international foundations and standards, to raise the educational and academic level of the target groups.",
+  "about.mission": "Mission",
+  "about.missionDescription": "We strive to provide an interactive learning environment for the largest segment of society by using the latest software technologies to break the barrier and routine of classrooms by meeting the future aspirations for education.",
+  "about.vision": "Vision",
+  "about.visionDescription": "Play a unique role in enhancing the educational and academic level in educational institutions to keep pace with the vast variety in educational process.",
+  "Services": {
+    "head": "Services",
+    "des": "We provide optimal solutions to meet the future of education in the world.",
+
+    "src": {
+      "img0": "mar0",
+      "img1": "mar1",
+      "img2": "mar2",
+      "img3": "mar3",
+      "img4": "mar4"
+    },
+
+    "cardHead": {
+      "DEVELOPMENT": "ELEARNING COURSES DEVELOPMENT",
+      "MULTIMEDIA": "INTERACTIVE MULTIMEDIA",
+      "CONSULTING": "TRAINING AND CONSULTING",
+      "ENVIRONMENTS": "AR AND VR ENVIRONMENTS",
+      "METHODOLOGY": "STEM METHODOLOGY"
+    },
+    "cardDes": {
+      "DEVELOPMENT": "Tajseer is committed to developing reliable and purposeful digital educational materials that comply with global standards for ELearning. The courses that are developed are characterized by their compatibility with all computers, smart devices and various operating systems (iOS/Android), and includes a friendly GUI with adaptive content that matches the individual needs of each learner. It is also meet the Digital content compliance (SCORM) standards with fully technical support for publishing on LMS/CMS/MOOCs.",
+      "MULTIMEDIA": "At Tajseer, designers have a wide imagination to develop professional graphic interfaces, keeping eye on the details and the selection of colors, contrast and connotations, in order to produce the best designs, graphics, user interfaces and interactive activities. We produces professional clips that include video and audio recordings, in addition to developing animations and motion graphics.",
+      "CONSULTING": "Tajseer provides many services in the fields of educational consultancy and development of training packages to ensure that clients acquire new skills and knowledge through interaction with the expertise of specialized consultants. Tajseer gains its professional experience as a result of its consultants' exposure to many local and international institutions and organizations, ensuring the application of best practices in the fields of training and consulting.",
+      "ENVIRONMENTS": "Tajseer keeps pace with the rapid developments in real and virtual education and training technologies, as it provides services for designing and developing virtual laboratories for technical and vocational education and training using (360 image, augmented reality-AR, virtual reality-VR) technologies. We also developing 2D/3D educational games and employing VR technologies and holograms in composing lessons based on the STEM methodology",
+      "METHODOLOGY": "Tajseer provides services for creating courses and educational packages based on the STEM methodology, implementing specialized training workshops (STEM Workshops) and educational/instructional design models."
+    }
+  },
+
+  "Consulting": {
+    "title": "Training & Consulting",
+    "des": "Tajseer provides many services in the fields of educational consultancy and development of training packages to ensure that clients acquire new skills and knowledge through interaction with the expertise of specialized consultants. Tajseer gains its professional experience as a result of its consultants' exposure to many local and international institutions and organizations,ensuring the application of -best practices- in the fields of training and consulting."
+  },
+
+  "footer":{
+    "findus":"Find us",
+    "findusdes":"Riyadh - Olaya Street",
+    "callus" :"Call us",
+    "email":"Email",
+    "Reserved":"© 2024 Tajseer, All Rights Reserved."
+  }
+}
