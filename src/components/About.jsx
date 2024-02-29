@@ -8,7 +8,7 @@ const About = () => {
   const [play, setPlay] = useState(0);
   const { t } = useTranslation();
   const atSrc = `https://www.youtube.com/embed/qCeML7rAjkk?rel=0&amp;amp;autoplay=${play}&amp;mute=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.renderforest.com`;
-  const videoRef = useRef(null);
+  const videoRef = useRef();
   useEffect(() => {
     const options = {
       root: null,
@@ -17,13 +17,18 @@ const About = () => {
     };
 
     const observer1 = new IntersectionObserver((entries) => {
+      console.log(observer1);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setPlay(1);
+          // videoRef.current.style.transform="scale(1)"
+          // videoRef.current.style.transition="0.4s linear"
           // videoRef.current.play();
         } else {
           setPlay(0); // videoRef.current?.pause();
+          // videoRef.current.style.transform="scale(0)"
         }
+
       });
     }, options);
     observer1.observe(videoRef.current);
@@ -33,7 +38,7 @@ const About = () => {
         observer1.unobserve(videoRef.current);
       }
     };
-  }, []);
+  }, [play]);
 
   const [ref, sprong] = useInView(
     () => ({

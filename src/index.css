@@ -72,8 +72,7 @@ body {
 .mainBg > svg {
   height: 100vh;
   position: fixed;
-  bottom: -1rem;
-  z-index: -100000;
+  z-index: -1000;
   animation: ToYaxis 18s ease-in-out infinite;
 }
 
@@ -98,12 +97,12 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #00395D 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 2, 42, 0) 100%);
+  background: linear-gradient(0deg, #00395d 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 2, 42, 0) 100%);
 }
 
 .youtubeFram {
   width: 100vw;
-  height: calc(100vw - 10vh);
+  height: calc(50vw - 10vh);
 }
 
 header {
@@ -352,7 +351,8 @@ button {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   height: 100%;
-  padding: 20px;
+  padding: 22px;
+  margin: 0px;
   overflow-y: auto;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.4274509804);
@@ -408,18 +408,18 @@ section {
 
 @keyframes swipe {
   0% {
-    transform: translate(-100%);
+    transform: translate(0);
   }
   100% {
-    transform: translate(0);
+    transform: translate(100%);
   }
 }
 @keyframes swipe1 {
   0% {
-    transform: translate(100%);
+    transform: translate(0);
   }
   100% {
-    transform: translate(0%);
+    transform: translate(-100%);
   }
 }
 .buttonDraggable {
@@ -560,13 +560,13 @@ section {
     width: 70%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .mainBg {
     background: linear-gradient(180deg, rgba(0, 141, 169, 0.544) 0%, rgba(0, 141, 169, 0.915) 50%, rgba(0, 92, 168, 0.875) 100%);
   }
   .youtubeFram {
     width: 100vw;
-    height: calc(100vw - 10vh);
+    height: calc(50vw - 1vh);
   }
   .moon-icon {
     font-size: 1.2rem;
@@ -628,9 +628,41 @@ section {
     font-size: 5.8vw;
   }
 }
-@media only screen and (min-width: 1024px) {
-  .youtubeFram {
-    width: 100vw;
-    height: calc(100vw - 120vh);
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 1.3em;
+  }
+}
+@media (orientation: landscape) {
+  .footerLand {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .headerbg .m-6 {
+    margin: 1em;
+  }
+  .headerbg img {
+    width: 15vw;
+  }
+  .headerbg nav a {
+    font-size: 13.5em;
+    height: 1vh;
+  }
+  .headerbg .close {
+    font-size: 3vw;
+  }
+  .footerToggle {
+    height: 1vh;
+  }
+  .footerToggle div {
+    flex-direction: row;
+    width: 100%;
+  }
+  .footerToggle .v1 {
+    width: 6rem;
+  }
+  nav {
+    font-size: 0.1em;
+    display: flex;
   }
 }/*# sourceMappingURL=index.css.map */

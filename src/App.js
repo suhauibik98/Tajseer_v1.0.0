@@ -59,8 +59,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          <Route path="/EN" element={<MainPage />}></Route>
-          <Route path="/AR" element={<jkjh  />}></Route>
+         
         </Routes>
       </Router>
     </>

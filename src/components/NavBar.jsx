@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import logoEn from "../images/TajsserLogo.svg";
 import logoAr from "../images/LogoAr.png";
 import NavMotion from "./NavMotion";
@@ -104,8 +104,8 @@ const NavBar = () => {
             </nav>
           </>
 
-          <div className="gap-[15%]">
-            <div className="p-4">
+          <div className="gap-[10%]">
+            <div className="p-2">
               {!convert && (
                 <button
                   onClick={() => handelAR("ar")}
@@ -138,17 +138,18 @@ const NavBar = () => {
                 ></MdOutlineWbSunny>
               </div>
             )}
-          </div>
+          
           <button
             className="nav-btn"
             onClick={() => dispatch({ type: "NAVSHOW" })}
           >
             <FaBars />
-          </button>
+          </button>  
+          </div>
         </header>
       )}
 
-      {show && <NavToggle></NavToggle>}
+      {show && <NavToggle/>}
     </>
   );
 };

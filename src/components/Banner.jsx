@@ -4,21 +4,21 @@ const Banner = ({ images, speed = 20000 }) => {
     return (
       <div className="inner">
         <div className="wrapper">
-          <section className={i18n.language === "ar" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
+          <section className={i18n.language === "en" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
             {images.map(({ id, image }) => (
               <div className="image" key={id}>
                 <img className="imgBanner" src={image} alt={id} />
               </div>
             ))}
           </section>
-          <section className={i18n.language === "ar" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
+          <section className={i18n.language === "en" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
             {images.map(({ id, image }) => (
               <div className="image" key={id}>
                 <img className="imgBanner" src={image} alt={id} />
               </div>
             ))}
           </section>
-          <section className={i18n.language === "ar" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
+          <section className={i18n.language === "en" ? "animate-swipe1":"animate-swipe"} style={{ "--speed": `${speed}ms` }}>
             {images.map(({ id, image }) => (
               <div className="image" key={id}>
                 <img className="imgBanner" src={image} alt={id} />

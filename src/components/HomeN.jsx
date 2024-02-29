@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../videos/Gemba66.mp4";
+import video from "../videos/Tajseer.mp4";
 const HomeN = () => {
   
   return (

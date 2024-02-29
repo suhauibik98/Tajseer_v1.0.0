@@ -36,11 +36,11 @@ const NavToggle = () => {
       <header className="w-screen headerbg h-screen flex bg-black flex-col fixed  z-40  ">
         <div className="w-full z-50 relative flex justify-center items-center  ">
           <div className="w-full m-6 ">
-            <img onClick={() => scrollToSection("Home")} src={ConvertTo(t("logo.logo"))} className="w-[25vw]" alt="a" />
+            <img onClick={() => scrollToSection("Home")} src={ConvertTo(t("logo.logo"))} className="w-[30vw]" alt="a" />
           </div>
                  <div>
             <button
-              className="text-yellow-50 text-[5vw]"
+              className="text-yellow-50 text-[5vw] close"
               onClick={() => dispatch({ type: "NAVSHOW" })}
             >
               <FaTimes />
@@ -74,13 +74,13 @@ const NavToggle = () => {
             onClick={() => scrollToSection("Consulting")}
           />
         </nav>
-        <footer className="w-screen footerToggle text-white py-8 flex justify-center items-center">
+        <footer className="w-screen footerToggle text-white py-8 text-xs flex justify-center items-center">
           <div className=" mx-auto flex flex-col items-center max-w-screen-lg px-4">
             <div className="w-full text-center mb-1">
               <div className="flex items-center justify-center">
-                <FaLocationDot className="text-2xl md:text-3xl mr-2 md:mr-5" />
+                <FaLocationDot className="text-xl md:text-3xl text-red-500 mr-2 md:mr-5" />
                 <div>
-                  <p className="font-bold text-lg sm:text-xl md:text-2xl m-3">
+                  <p className="font-extrabold  text-base m-3">
                     {t("footer.findus")}
                   </p>
                   <a
@@ -94,9 +94,9 @@ const NavToggle = () => {
             </div>
             <div className="w-full text-center mb-1">
               <div className="flex items-center justify-center">
-                <MdOutlineMail className="text-2xl md:text-3xl mr-2 md:mr-5" />
+                <MdOutlineMail className="text-xl md:text-3xl mr-2 md:mr-5" />
                 <div>
-                  <p className="font-bold text-lg sm:text-xl md:text-2xl m-3">
+                  <p className="font-extrabold  text-base m-3">
                   {t("footer.email")}
                   </p>
                   <p>
@@ -105,7 +105,7 @@ const NavToggle = () => {
                 </div>
               </div>
             </div>
-            <p>v 1.0.0</p>
+            <p className="v1">v 1.0.0</p>
           </div>
         </footer>
       </header>
