@@ -59,7 +59,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-         
         </Routes>
       </Router>
     </>

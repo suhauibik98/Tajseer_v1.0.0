@@ -785,9 +785,10 @@ button {
 	display: flex;
 }
 
-section {
+section  {
 	display: flex;
 	// animation: swipe1 var(--speed) linear infinite backwards;
+	// -webkit-animation: swipe 20000ms linear infinite backwards
 }
 
 @keyframes swipe {
@@ -799,6 +800,16 @@ section {
 		transform: translate(100%);
 	}
 }
+@-webkit-keyframes swipe {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(-100%);
+	}
+
+  }
 @keyframes swipe1 {
 	0% {
 		transform: translate(0);
@@ -808,6 +819,20 @@ section {
 		transform: translate(-100%);
 	}
 }
+@-webkit-keyframes swipe1 {
+	0% {
+		transform: translate(0);
+	}
+
+	100% {
+		transform: translate(-100%);
+	}
+
+  }
+
+  
+
+
 
 .buttonDraggable {
 	z-index: 5;

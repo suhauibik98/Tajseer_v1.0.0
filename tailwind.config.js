@@ -6,6 +6,8 @@ module.exports = {
       animation: {
         swipe: "swipe 20000ms linear infinite backwards",
         swipe1: "swipe1 20000ms linear infinite backwards ",
+        swipe2:"-webkit-animation swipe2 20000ms linear infinite backwards",
+
       },
     },
   },

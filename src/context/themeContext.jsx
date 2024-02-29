@@ -6,10 +6,10 @@ import {
   useEffect,
 } from "react";
 import ThemeReducer from "./themeReducer";
-import { initReactI18next } from 'react-i18next';
-import i18next from 'i18next';
-import enTranslation from '../Translate/en.json';
-import arTranslation from '../Translate/ar.json';
+import { initReactI18next } from "react-i18next";
+import i18next from "i18next";
+import enTranslation from "../Translate/en.json";
+import arTranslation from "../Translate/ar.json";
 
 // Configure i18next
 i18next
@@ -23,8 +23,8 @@ i18next
         translation: arTranslation, // Arabic translations
       },
     },
-    lng: 'en', // Set default language
-    fallbackLng: 'en', // Fallback language if translation for current language is not available
+    lng: "en", // Set default language
+    fallbackLng: "en", // Fallback language if translation for current language is not available
     interpolation: {
       escapeValue: false, // React already escapes values to prevent XSS
     },
@@ -38,7 +38,7 @@ const INITAL_STATE = {
 export const ThemeContext = createContext(INITAL_STATE);
 
 export const ThemeContextProvider = ({ children }) => {
-  document.documentElement.dir = i18next.language === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.dir = i18next.language === "ar" ? "rtl" : "ltr";
 
   const [state, dispatch] = useReducer(ThemeReducer, INITAL_STATE);
   const [activeSection, setActiveSection] = useState("");
@@ -66,9 +66,14 @@ export const ThemeContextProvider = ({ children }) => {
     i18next.changeLanguage(lng);
   };
   return (
-    
     <ThemeContext.Provider
-      value={{ ...state, activeSection,changeLanguage, setActiveSection, dispatch }}
+      value={{
+        ...state,
+        activeSection,
+        changeLanguage,
+        setActiveSection,
+        dispatch,
+      }}
     >
       {children}
     </ThemeContext.Provider>

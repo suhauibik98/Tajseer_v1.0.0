@@ -25,6 +25,7 @@ const Banner = ({ images, speed = 20000 }) => {
               </div>
             ))}
           </section>
+        
         </div>
       </div>
     );
